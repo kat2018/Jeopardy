@@ -1,0 +1,54 @@
+/* Google Font 
+font-family: 'Codystar', cursive; --> This font is dotted and should be used for headers only
+Fonts that can be matched with Codystar
+font-family: 'Montserrat', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lobster', cursive;
+
+ */
+
+.gameTitle{
+    border: solid black;
+    display: block;
+    /* width: 300px; */
+    font-family: 'Codystar', cursive;
+    font-size: 6em;
+    overflow-wrap: break-word;
+}
+
+.row{
+    /* background-color: aqua; */
+    /* border: solid black; */
+}
+
+.col-6{
+    background-color: aqua;
+    /* border: solid black; */
+    align-items: center;
+    height: 100px;
+}
+
+.clueHeader{
+    background-color: blue;
+    /* border: solid black; */
+    justify-self: auto;
+}
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
