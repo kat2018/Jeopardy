@@ -132,8 +132,38 @@ console.log(atlTour400.wrong[1]);
 console.log(atlTour400.wrong[0]);
 console.log(atlTour400.correct);
 
-//The most famous place in Atlanta
-//a. Auburn Avenue (the birthplace of the Civil Rights)
-//b. Livings Walls (Street and Art Gallery)
-//c. The Varsity (Family Onwed Restaurant opened in 1928)
-//source: https://www.atlanta.net/Blog/Have-You-Visited-the-Most-Famous-Places-in-Atlanta-/
+//
+//a. 
+//b. 
+//c. 
+//source: 
+
+let atlTour600 = {
+  category: "Atlanta Tourism",
+  clue: "The most famous place in Atlanta",
+  wrong: [
+    "Livings Walls (Street and Art Gallery)",
+    "The Varsity (Family Onwed Restaurant opened in 1928)"
+  ],
+  correct: "Auburn Avenue (the birthplace of the Civil Rights)",
+  points: 400,
+    source: "https://www.atlanta.net/Blog/Have-You-Visited-the-Most-Famous-Places-in-Atlanta-/"
+};
+console.log(atlTour600.wrong[1]);
+console.log(atlTour600.wrong[0]);
+console.log(atlTour600.correct);
+
+let atlBonus = {
+  category: "Atlanta Bonus Round",
+  clue: "You'd go to jail for that in Atlanta",
+  wrong: ["Driving Without Your Shoes", "Owning a Tank"],
+  correct: "tying a giraffe to a telephone pole",
+  points: 1000,
+  source: [
+    "https://www.urbo.com/content/things-that-arent-illegal-but-probably-should-be/",
+    "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
+  ]
+};
+console.log(atlBonus.correct);
+console.log(atlBonus.wrong[0]);
+console.log(atlBonus.wrong[1]);
