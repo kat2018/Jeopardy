@@ -1,6 +1,13 @@
 //pointsCard module will define the function for opening each card on click event
 
+//$().button("dispose"); --> Save this for later - bootstrap allow to dispose button when used https://getbootstrap.com/docs/4.0/components/buttons/ or this method too $().button('toggle')
+
+
 $(document).ready();
+
+function atlHistory200F() {
+    alert("You win")
+}
 
 let atlHistory200 = {
   category: "Atlanta History",
@@ -12,7 +19,7 @@ let atlHistory200 = {
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
 
-$().button("dispose");
+
 
 console.log(atlHistory200.correct);
 console.log(atlHistory200.wrong[0]);
