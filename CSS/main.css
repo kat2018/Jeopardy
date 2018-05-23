@@ -8,7 +8,7 @@ font-family: 'Lobster', cursive;
  */
 
 .gameTitle{
-    border: solid black;
+    /* border: solid black; */
     display: block;
     /* width: 300px; */
     font-family: 'Codystar', cursive;

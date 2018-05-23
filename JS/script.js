@@ -6,7 +6,9 @@
 $(document).ready();
 
 function atlHistory200F() {
-    alert("You win")
+    console.log()
+
+    alert(atlHistory200.clue);
 }
 
 let atlHistory200 = {
@@ -18,9 +20,6 @@ let atlHistory200 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-
-
-
 console.log(atlHistory200.correct);
 console.log(atlHistory200.wrong[0]);
 console.log(atlHistory200.wrong[1]);
