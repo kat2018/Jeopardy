@@ -1,21 +1,47 @@
 //pointsCard module will define the function for opening each card on click event
 
-//Trivia questions: 
-//Category: Atlanta History
-//What was Atlanta originally named? 
-//a. Terminus and Marthasville (correct)
-//b. Atlantis
-//c. Peachtree City
+$(document).ready()
 
-//How many streets contain "Peachtree" in its name? 
-//a. over 100
-//b. over 55 (correct)
-//c. over 75
+let atlHistory200 = {
+    category: "Atlanta History",
+    clue: "How was Atlanta originally named?", wrong: ["Atlantis", "Peachtree City"],
+    correct: "Terminus and Marthasville",
+    points: 200,
+    source: "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
+    
+};
+console.log(atlHistory200.correct);
+console.log(atlHistory200.wrong[0]);
+console.log(atlHistory200.wrong[1]);
 
-//Why is Atlanta's symbol a Phoenix? 
-//a. Because we started from the bottom now we're here
-//b. Because the city was once burned to the ground (correct)
-//c. Because birds are awesome
+let atlHistory400 = {
+    category: "Atlanta History",
+    clue: "How many streets contain Peachtree in its name?", 
+    wrong: ["over 100", "over 75"],
+    correct: "Over 55",
+    points: 400,
+    source: "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
+
+};
+console.log(atlHistory400.wrong[1]);
+console.log(atlHistory400.correct);
+console.log(atlHistory400.wrong[0]);
+
+let atlHistory600 = {
+  category: "Atlanta History",
+  clue: "Why is Atlanta's symbol a Phoenix?",
+  wrong: [
+    "Because we started from the bottom now we're here",
+    "Because birds are awesome"
+  ],
+  correct: "Because the city was once burned to the ground",
+  points: 400,
+  source:
+    "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
+};
+console.log(atlHistory400.wrong[1]);
+console.log(atlHistory400.correct);
+console.log(atlHistory400.wrong[0]);
 
 //This was once illegal in Atlanta
 //a. Put icecream in your back pocket (correct)
@@ -62,4 +88,5 @@
 
 
 
-$(document).ready()
+
+
