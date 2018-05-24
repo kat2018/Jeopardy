@@ -48,22 +48,25 @@ let atlHistory800 = {
 const newLocal = $("#qOne200").html(atlHistory200.clue);
 // clue 200 answers
 console.log(atlHistory200.correct);
-const newLocal_1 = $("#btn1").html(atlHistory200.correct);
+const newLocal_1 = $("#answer1").html(atlHistory200.correct);
 console.log(atlHistory200.wrong[0]);
-$("#btn2").html(atlHistory200.wrong[0]);
+$("#answer2").html(atlHistory200.wrong[0]);
 console.log(atlHistory200.wrong[1]);
-$("#btn3").html(atlHistory200.wrong[1]);
+$("#answer3").html(atlHistory200.wrong[1]);
 
-// let correct = $(atlHistory200.correct)
+//let correct = $(atlHistory200.correct)
 
-// $(#btn1).click( function () { 
-//     if (correct.is('clicked')) {
-//         alert('it worked')
-//     } else {
-        
-//     }
-//  })
+$('#answer1').click(function () { 
+    $(this).data('clicked', true)
+ })
 
+ if (jQuery("#answer1").data("clicked")) {
+   alert("Correct!");
+ } else if (jQuery("#answer2").data("clicked")) {
+   alert("Wrong answer!");
+ } else if (jQuery("#answer3").data("clicked")) {
+     alert("Wrong answer!");
+ }
 // Atlanta Hipster Category
 let atlHipster200 = {
   category: "Atlanta Hipster",
