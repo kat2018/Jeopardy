@@ -2,15 +2,6 @@
 
 //$().button("dispose"); --> Save this for later - bootstrap allow to dispose button when used https://getbootstrap.com/docs/4.0/components/buttons/ or this method too $().button('toggle')
 
-
-$(document).ready();
-
-function atlHistory200F() {
-    console.log()
-
-    alert(atlHistory200.clue);
-}
-
 let atlHistory200 = {
   category: "Atlanta History",
   clue: "What was Atlanta originally named?",
@@ -20,21 +11,6 @@ let atlHistory200 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-const newLocal = $("#qOne200").html(atlHistory200.clue);
-
-
-// clue 1 answer
-console.log(atlHistory200.correct);
-const newLocal_1 = $("#btn1").html(atlHistory200.correct);
-
-
-//second answer
-console.log(atlHistory200.wrong[0]);
-$("#btn2").html(atlHistory200.wrong[0]);
-
-//third answer
-console.log(atlHistory200.wrong[1]);
-$("#btn3").html(atlHistory200.wrong[1]);
 
 let atlHistory400 = {
   category: "Atlanta History",
@@ -45,9 +21,7 @@ let atlHistory400 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-console.log(atlHistory400.wrong[1]);
-console.log(atlHistory400.correct);
-console.log(atlHistory400.wrong[0]);
+
 
 let atlHistory600 = {
   category: "Atlanta History",
@@ -61,9 +35,7 @@ let atlHistory600 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-console.log(atlHistory600.wrong[1]);
-console.log(atlHistory600.wrong[0]);
-console.log(atlHistory600.correct);
+
 
 let atlHistory800 = {
   category: "Atlanta History",
@@ -74,9 +46,18 @@ let atlHistory800 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-console.log(atlHistory800.wrong[1]);
-console.log(atlHistory800.wrong[0]);
-console.log(atlHistory800.correct);
+// Clue: ATL History
+//Question
+const newLocal = $("#qOne200").html(atlHistory200.clue);
+// clue 200 answer
+console.log(atlHistory200.correct);
+const newLocal_1 = $("#btn1").html(atlHistory200.correct);
+//clue 400 answer
+console.log(atlHistory200.wrong[0]);
+$("#btn2").html(atlHistory200.wrong[0]);
+//clue 600 answer
+console.log(atlHistory200.wrong[1]);
+$("#btn3").html(atlHistory200.wrong[1]);
 
 // Atlanta Hipster
 
@@ -194,6 +175,14 @@ let atlBonus = {
 console.log(atlBonus.correct);
 console.log(atlBonus.wrong[0]);
 console.log(atlBonus.wrong[1]);
+
+// Headers
+$("#atlHistHeader").html(atlHistory200.category);
+$("#atlHipsterHeader").html(atlHipster200.category);
+$("#atlTourHeader").html(atlTour200.category);
+
+//End of clue header
+
 
 function pointsCalculator() {
     if (condition) {
