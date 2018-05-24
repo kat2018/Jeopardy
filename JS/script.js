@@ -1,4 +1,6 @@
 //$().button("dispose"); --> Save this for later - bootstrap allow to dispose button when used https://getbootstrap.com/docs/4.0/components/buttons/ or this method too $().button('toggle')
+
+// ----------------------ATL HISTORY-------------------
 let atlHistory200 = {
   category: "Atlanta History",
   clue: "What was Atlanta originally named?",
@@ -8,6 +10,21 @@ let atlHistory200 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
+
+// Clue: ATL History 200
+//Question
+const newLocal = $("#qOne200").html(atlHistory200.clue);
+// clue 200 answers
+console.log(atlHistory200.correct);
+const newLocal_1 = $("#answer1").html(atlHistory200.correct);
+console.log(atlHistory200.wrong[0]);
+$("#answer2").html(atlHistory200.wrong[0]);
+console.log(atlHistory200.wrong[1]);
+$("#answer3").html(atlHistory200.wrong[1]);
+
+
+
+
 
 let atlHistory400 = {
   category: "Atlanta History",
@@ -43,31 +60,12 @@ let atlHistory800 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-// Clue: ATL History 200
-//Question
-const newLocal = $("#qOne200").html(atlHistory200.clue);
-// clue 200 answers
-console.log(atlHistory200.correct);
-const newLocal_1 = $("#answer1").html(atlHistory200.correct);
-console.log(atlHistory200.wrong[0]);
-$("#answer2").html(atlHistory200.wrong[0]);
-console.log(atlHistory200.wrong[1]);
-$("#answer3").html(atlHistory200.wrong[1]);
 
-//let correct = $(atlHistory200.correct)
 
-$('#answer1').click(function () { 
-    $(this).data('clicked', true)
- })
 
- if (jQuery("#answer1").data("clicked")) {
-   alert("Correct!");
- } else if (jQuery("#answer2").data("clicked")) {
-   alert("Wrong answer!");
- } else if (jQuery("#answer3").data("clicked")) {
-     alert("Wrong answer!");
- }
-// Atlanta Hipster Category
+
+
+// ----------------------ATL HIPSTER-------------------
 let atlHipster200 = {
   category: "Atlanta Hipster",
   clue: "A trail that will get you to Alabama riding your bike",
@@ -119,7 +117,7 @@ $("#btn2-c2").html(atlHipster200.wrong[0]);
 console.log(atlHipster200.correct);
 $("#btn3-c2").html(atlHipster200.correct);
 
-// Atlanta Turism Catergory
+// ----------------------ATL TOURISM-------------------
 let atlTour200 = {
   category: "Atlanta Tourism",
   clue: "The number one ranked park in Atlanta",
@@ -135,11 +133,8 @@ console.log(atlTour200.wrong[1]);
 $("#btn1-c3").html(atlTour200.wrong[1]);
 console.log(atlTour200.wrong[0]);
 $("#btn2-c3").html(atlTour200.wrong[0]);
-
 console.log(atlTour200.correct);
 $("#btn3-c3").html(atlTour200.correct);
-
-
 
 let atlTour400 = {
   category: "Atlanta Tourism",
@@ -184,36 +179,29 @@ console.log(atlBonus.correct);
 console.log(atlBonus.wrong[0]);
 console.log(atlBonus.wrong[1]);
 
-// Headers
+// ------------------Headers-----------------------------------
 $("#atlHistHeader").html(atlHistory200.category);
 $("#atlHipsterHeader").html(atlHipster200.category);
 $("#atlTourHeader").html(atlTour200.category);
 
-//End of clue header
+//------------------End of clue header--------------------------
 
+// ------------------Button Hide on Click-----------------------
+
+//Below is the function that hides buttons on click
 $(document).ready(function () {
     $("button").click(function () {
         $(this).hide();
     });
 });
 
-$(document).ready(function() {
-  $("button").click(function() {
-    $(this).hide();
-  });
-});
 
-$(document).ready(function () {
-    $("")
-})
+//-------------------Points Calculator (NOT WORKING YET)---------
 
 function pointsCalculator() {
     if (this.correct === 'clicked') {
         
     }
-
-
-
   //if the answer is wrong (false)
   //deduct the X points for that category from player 1
   //highlight the correct answer
@@ -225,3 +213,20 @@ function pointsCalculator() {
   //replace the "pointsCard" selected with a blank card
   //run the rounds until reaching X out of X rounds
 }
+
+//-------------------POINTS CALCULATOR---------------------------
+// FUNCTION BELLOW SHOULD ALLOW BUTTON TO ALERT ON CLICK WHEN ASNWER IS CORRECT HOWEVER, THIS IS NOT WORKING YET
+//let correct = $(atlHistory200.correct)
+
+// $('#answer1').click(function () {
+//     $(this).data('clicked', true)
+// })
+
+// if (jQuery("#answer1").data("clicked")) {
+//     alert("Correct!");
+// } else if (jQuery("#answer2").data("clicked")) {
+//     alert("Wrong answer!");
+// } else if (jQuery("#answer3").data("clicked")) {
+//     alert("Wrong answer!");
+// }
+
