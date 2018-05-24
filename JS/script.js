@@ -129,10 +129,17 @@ let atlTour200 = {
   source:
     "https://www.10best.com/destinations/georgia/atlanta/attractions/parks/"
 };
+$("#c3qOne200").html(atlTour200.clue);
+
 console.log(atlTour200.wrong[1]);
-$("#btn2-c2").html(atlHipster200.wrong[0]);
+$("#btn1-c3").html(atlTour200.wrong[1]);
 console.log(atlTour200.wrong[0]);
+$("#btn2-c3").html(atlTour200.wrong[0]);
+
 console.log(atlTour200.correct);
+$("#btn3-c3").html(atlTour200.correct);
+
+
 
 let atlTour400 = {
   category: "Atlanta Tourism",
@@ -190,6 +197,15 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function() {
+  $("button").click(function() {
+    $(this).hide();
+  });
+});
+
+$(document).ready(function () {
+    $("")
+})
 
 function pointsCalculator() {
     if (this.correct === 'clicked') {
