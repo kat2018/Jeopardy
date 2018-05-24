@@ -1,7 +1,4 @@
-//pointsCard module will define the function for opening each card on click event
-
 //$().button("dispose"); --> Save this for later - bootstrap allow to dispose button when used https://getbootstrap.com/docs/4.0/components/buttons/ or this method too $().button('toggle')
-
 let atlHistory200 = {
   category: "Atlanta History",
   clue: "What was Atlanta originally named?",
@@ -46,21 +43,18 @@ let atlHistory800 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-// Clue: ATL History
+// Clue: ATL History 200
 //Question
 const newLocal = $("#qOne200").html(atlHistory200.clue);
-// clue 200 answer
+// clue 200 answers
 console.log(atlHistory200.correct);
 const newLocal_1 = $("#btn1").html(atlHistory200.correct);
-//clue 400 answer
 console.log(atlHistory200.wrong[0]);
 $("#btn2").html(atlHistory200.wrong[0]);
-//clue 600 answer
 console.log(atlHistory200.wrong[1]);
 $("#btn3").html(atlHistory200.wrong[1]);
 
-// Atlanta Hipster
-
+// Atlanta Hipster Category
 let atlHipster200 = {
   category: "Atlanta Hipster",
   clue: "A trail that will get you to Alabama riding your bike",
@@ -70,16 +64,6 @@ let atlHipster200 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
-$("#c2qOne200").html(atlHipster200.clue);
-
-console.log(atlHipster200.wrong[1]);
-$("#btn1-c2").html(atlHipster200.wrong[1]);
-
-console.log(atlHipster200.wrong[0]);
-$("#btn2-c2").html(atlHipster200.wrong[0]);
-
-console.log(atlHipster200.correct);
-$("#btn3-c2").html(atlHipster200.correct);
 
 let atlHipster400 = {
   category: "Atlanta Hipster",
@@ -98,8 +82,6 @@ console.log(atlHipster400.wrong[1]);
 console.log(atlHipster400.wrong[0]);
 console.log(atlHipster400.correct);
 
-
-
 let atlHipster600 = {
   category: "Atlanta Hipster",
   clue: "The most hipster neighborhood in Atlanta",
@@ -113,6 +95,18 @@ console.log(atlHipster600.wrong[1]);
 console.log(atlHipster600.wrong[0]);
 console.log(atlHipster600.correct);
 
+$("#c2qOne200").html(atlHipster200.clue);
+
+console.log(atlHipster200.wrong[1]);
+$("#btn1-c2").html(atlHipster200.wrong[1]);
+
+console.log(atlHipster200.wrong[0]);
+$("#btn2-c2").html(atlHipster200.wrong[0]);
+
+console.log(atlHipster200.correct);
+$("#btn3-c2").html(atlHipster200.correct);
+
+// Atlanta Turism Catergory
 let atlTour200 = {
   category: "Atlanta Tourism",
   clue: "The number one ranked park in Atlanta",
@@ -138,12 +132,6 @@ let atlTour400 = {
 console.log(atlTour400.wrong[1]);
 console.log(atlTour400.wrong[0]);
 console.log(atlTour400.correct);
-
-//
-//a.
-//b.
-//c.
-//source:
 
 let atlTour600 = {
   category: "Atlanta Tourism",
