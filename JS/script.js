@@ -13,26 +13,27 @@ function atlHistory200F() {
 
 let atlHistory200 = {
   category: "Atlanta History",
-  clue: "How was Atlanta originally named?",
+  clue: "What was Atlanta originally named?",
   wrong: ["Atlantis", "Peachtree City"],
   correct: "Terminus and Marthasville",
   points: 200,
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
+const newLocal = $("#qOne200").html(atlHistory200.clue);
+
+
 // clue 1 answer
 console.log(atlHistory200.correct);
-function inputClue1(id) {
-    id.innerHTML = (atlHistory200.correct);
-}
+const newLocal_1 = $("#btn1").html(atlHistory200.correct);
+
+
 //second answer
 console.log(atlHistory200.wrong[0]);
-function inputClue2() {
-    document.getElementById('inputClue2').innerHTML = "test";
-}
+$("#btn2").html(atlHistory200.wrong[0]);
+
 //third answer
 console.log(atlHistory200.wrong[1]);
-
 $("#btn3").html(atlHistory200.wrong[1]);
 
 let atlHistory400 = {
@@ -77,18 +78,27 @@ console.log(atlHistory800.wrong[1]);
 console.log(atlHistory800.wrong[0]);
 console.log(atlHistory800.correct);
 
+// Atlanta Hipster
+
 let atlHipster200 = {
   category: "Atlanta Hipster",
   clue: "A trail that will get you to Alabama riding your bike",
-  wrong: ["The beltline", "The airportal trail system"],
+  wrong: ["The beltline", "Airportal trail system"],
   correct: "Silver Comet Trail starting in Smyrna",
   points: 200,
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
+$("#c2qOne200").html(atlHipster200.clue);
+
 console.log(atlHipster200.wrong[1]);
+$("#btn1-c2").html(atlHipster200.wrong[1]);
+
 console.log(atlHipster200.wrong[0]);
+$("#btn2-c2").html(atlHipster200.wrong[0]);
+
 console.log(atlHipster200.correct);
+$("#btn3-c2").html(atlHipster200.correct);
 
 let atlHipster400 = {
   category: "Atlanta Hipster",
@@ -107,10 +117,7 @@ console.log(atlHipster400.wrong[1]);
 console.log(atlHipster400.wrong[0]);
 console.log(atlHipster400.correct);
 
-//
-//a.
-//b.  (coorect)
-//c.
+
 
 let atlHipster600 = {
   category: "Atlanta Hipster",
@@ -135,6 +142,7 @@ let atlTour200 = {
     "https://www.10best.com/destinations/georgia/atlanta/attractions/parks/"
 };
 console.log(atlTour200.wrong[1]);
+$("#btn2-c2").html(atlHipster200.wrong[0]);
 console.log(atlTour200.wrong[0]);
 console.log(atlTour200.correct);
 
