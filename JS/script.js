@@ -184,9 +184,15 @@ $("#atlTourHeader").html(atlTour200.category);
 
 //End of clue header
 
+$(document).ready(function () {
+    $("button").click(function () {
+        $(this).hide();
+    });
+});
+
 
 function pointsCalculator() {
-    if (condition) {
+    if (this.correct === 'clicked') {
         
     }
 
