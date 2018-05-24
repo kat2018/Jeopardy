@@ -54,6 +54,16 @@ $("#btn2").html(atlHistory200.wrong[0]);
 console.log(atlHistory200.wrong[1]);
 $("#btn3").html(atlHistory200.wrong[1]);
 
+// let correct = $(atlHistory200.correct)
+
+// $(#btn1).click( function () { 
+//     if (correct.is('clicked')) {
+//         alert('it worked')
+//     } else {
+        
+//     }
+//  })
+
 // Atlanta Hipster Category
 let atlHipster200 = {
   category: "Atlanta Hipster",

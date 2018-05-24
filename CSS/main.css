@@ -6,7 +6,11 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Lobster', cursive;
 
  */
-
+body{
+   font-family: 'Lobster', cursive; 
+   color: rgb(0, 206, 150);
+   
+}
 .gameTitle{
     /* border: solid black; */
     display: block;
@@ -14,6 +18,13 @@ font-family: 'Lobster', cursive;
     font-family: 'Codystar', cursive;
     font-size: 6em;
     overflow-wrap: break-word;
+    color: whitesmoke;
+    font-weight: 400;
+}
+#rainbowBg{
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    //source: https://stackoverflow.com/questions/40557461/rainbow-gradient-on-text-in-css
+
 }
 
 .row{
@@ -22,16 +33,30 @@ font-family: 'Lobster', cursive;
 }
 
 .col-6{
-    background-color: aqua;
+    background-color: rgba(0, 253, 251, 0.411);
     /* border: solid black; */
     align-items: center;
     height: 100px;
 }
 
 .clueHeader{
-    background-color: blue;
+    background-color: rgba(0, 206, 150, 0.5);
     /* border: solid black; */
     justify-self: auto;
+}
+.clueHeader{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Codystar', cursive;
+    
+}
+#footer{
+    background: rgb(226, 229, 231);
+    font-size: 30px;
+
+}
+.emptySpace{
+    padding: 50px;
 }
 
 
