@@ -20,9 +20,20 @@ let atlHistory200 = {
   source:
     "http://mentalfloss.com/article/54883/25-things-you-might-not-know-about-atlanta"
 };
+// clue 1 answer
 console.log(atlHistory200.correct);
+function inputClue1(id) {
+    id.innerHTML = (atlHistory200.correct);
+}
+//second answer
 console.log(atlHistory200.wrong[0]);
+function inputClue2() {
+    document.getElementById('inputClue2').innerHTML = "test";
+}
+//third answer
 console.log(atlHistory200.wrong[1]);
+
+$("#btn3").html(atlHistory200.wrong[1]);
 
 let atlHistory400 = {
   category: "Atlanta History",
